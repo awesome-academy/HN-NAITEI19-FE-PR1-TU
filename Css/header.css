@@ -1,0 +1,176 @@
+.header__container__upper {
+    width: 100%;
+    max-height: fit-content;
+    background-image: url(../Images/WhiteBrick.jpg);
+}
+
+.header__logo {
+    width: 80px;
+}
+
+.header__image {
+    width: 80px;
+}
+
+.header__phone__logo {
+    height: 16px;
+    width: auto;
+}
+
+.header__input {
+    height: 50px;
+    border-radius: 999px;
+}
+
+.header__cart__logo {
+    height: 20px;
+    width: auto;
+}
+
+.header__container {
+    width: 100%;
+    background-color: var(--content_green);
+}
+
+.header__container span {
+    color: white;
+}
+.header__container a {
+    color: white;
+}
+.header__container a:hover {
+    background-color: var(--dark_green);
+    color: white;
+}
+.header__link--active {
+    background-color: var(--dark_green);
+}
+
+.footer {
+    color: #c7c7c7 !important;
+}
+.footer__email {
+    height: 30px;
+    /* width: 100%; */
+}
+.footer__email__btn {
+    background-color: var(--content_green);
+}
+.footer__divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--divider_grey);
+}
+.footer__icon {
+    color: var(--content_green);
+    margin-right: 3px;
+}
+.footer__ul li {
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.home__banner {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home__title {
+    margin-top: 30px;
+    font-weight: bold;
+    color: var(--content_green);    
+}
+.home__title__divider {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--divider_grey);
+}
+.home__card__small {
+    width: 46%;
+}
+.home__card {
+    margin: 2%;
+    border-radius: 0px;
+    position: relative;
+}
+.home__card img {
+    position: relative;
+}
+.home__badge--sale {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border-radius: 999px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.home__badge--new {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    border-radius: 999px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 15px;
+    left: 15px;
+}
+.home__price {
+    color: red;
+    margin-right: 5px;
+}
+.home__price__notsale {
+    opacity: 0.7;
+    font-size: small;
+    text-decoration: line-through;
+}
+.home__manybuy__card {
+    padding: 10px;
+    height: 14%;
+}
+.home__manybuy__card img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  .home__manybuy__card {
+    height: 60% !important;
+  }
+}
+
+.home__banner__small {
+    width: 100%;
+    object-fit: cover;
+}
+.home__news {
+    border-radius: 0px;
+}
+.home__news > * {
+    margin: 5px 0;
+}
+.home__news div {
+    font-style: italic;
+    font-size: 10px;
+    color: var(--divider_grey)
+}
+.home__news h4 {
+    font-size: 15px;
+    color: var(--content_green);
+}
+.home__news p {
+    font-size: 10px;
+}
+.home__news a {
+    text-decoration: none;
+    color: var(--content_green);
+    font-style: italic;
+    font-size: 10px;
+}

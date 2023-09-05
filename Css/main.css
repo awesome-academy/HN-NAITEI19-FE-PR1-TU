@@ -1,0 +1,33 @@
+:root {
+  --content_green: rgb(3, 190, 3);
+  --dark_green: #098600;
+  --divider_grey: #d4d4d4;
+}
+
+
+
+.flex__align__middle {
+    display: flex;
+    align-items: center;
+}
+.flex__justify__center {
+  display: flex;
+  justify-content: center;
+}
+
+.hidden__mobile {
+    display: none;
+}
+
+.hidden__lg {
+    display: flex;
+}
+
+@media screen and (min-width: 576px) {
+  .hidden__mobile {
+    display: flex !important;
+  }
+  .hidden__lg {
+    display: none !important;
+  }
+}
