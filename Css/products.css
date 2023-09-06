@@ -61,3 +61,17 @@
     font-size: 10px;
     color: var(--light_grey);
 }
+
+.grid__pagination {
+    border-radius: 0px;
+    margin: 0px 5px;
+    color: black;
+}
+.grid__pagination:hover {
+    background-color: var(--dark_green);
+    color: white;
+}
+.grid__pagination--active {
+    color: white;
+    background-color: var(--content_green);
+}
