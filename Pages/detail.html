@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../Css/home.css" />
+    <link rel="stylesheet" href="../Css/products.css" />
+    <link rel="stylesheet" href="../Css/main.css" />
+    <link rel="stylesheet" href="../Css/detail.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header__container__upper">
+        <div class="container-lg p-2">
+            <div class="row">
+                <div class="col-12 col-sm-4 text-center ">
+                    <img src="../Images/green-city.png" alt="Green Shop Logo" class="navbar-brand header__logo">
+                </div>
+                <div class="col-2 text-center">
+                    <img src="../Images/flower-pot.png" alt="Image next to logo" class="header__image hidden__mobile">
+                </div>
+                <div class="col-4 hidden__mobile">
+                    <form class="w-100">
+                        <div class="row d-flex hidden__mobile align-middle p-2 text-uppercase">
+                            <img src="../Images/call.png" alt="" class="header__phone__logo">
+                            Hỗ trợ: 099999999 - 09999999
+                        </div>
+                        <div class="row w-100">
+                            <div class="input-group overflow-hidden bg-white rounded-pill">
+                                <input type="text" class="form-control border-0" placeholder="Tìm kiếm">
+                                <div class="input-group-append">
+                                    <button class="btn border-start rounded-0" type="submit">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-2 hidden__mobile flex__align__middle">
+                    <img src="../Images/shopping-cart.png" class="mx-2 header__cart__logo">
+                    <div><span>0</span> Sản phẩm</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="header__container">
+        <div class="container-lg">
+            <nav class="navbar navbar-expand-sm p-0">
+                <div class="container-fluid">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#Navbarcollapse">
+                        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="Navbarcollapse">
+                        <div class="navbar-nav">
+                            <a class="nav-link text-uppercase mx-2 header__link--active" aria-current="page"
+                                href="#">Trang
+                                chủ</a>
+                            <a class="nav-link text-uppercase mx-2" href="#">Giới thiệu</a>
+                            <a class="nav-link text-uppercase mx-2" href="#">Sản phẩm</a>
+                            <a class="nav-link text-uppercase mx-2" href="#">Sản phẩm mới</a>
+                            <a class="nav-link text-uppercase mx-2" href="#">Tin tức</a>
+                            <a class="nav-link text-uppercase mx-2" href="#">Liên hệ</a>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="input-group hidden__lg">
+                            <input type="text" class="border-0 bg-transparent" placeholder="Tìm kiếm">
+                            <div class="input-group-append">
+                                <button class="btn" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <a class="hidden__lg" href=""><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="container-lg my-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item breadcrumb__item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item breadcrumb__item--active" aria-current="page">Cây dạ lam</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container-md my-3 px-5">
+        <div class="row mt-2">
+            <div class="col-5 p-1">
+                <img src="../Images/Product/spx2-1.png" alt="" class="list__img">
+            </div>
+            <div class="col-7 p-4 list__body">
+                <h5>Cây ngọc ngân</h5>
+                <div class="d-flex my-3">
+                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                </div>
+                <div class="d-flex flex__align__middle mt-1">
+                    <div class="home__price">200.000đ</div>
+                    <div class="home__price__notsale">300.000đ</div>
+                </div>
+                <div class="detail__divider"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam molestiae aspernatur cupiditate enim
+                    exercitationem? Eius accusamus at odit molestias modi? Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Minima quam fuga iure dicta necessitatibus sint quia ab! Voluptatem, tempora
+                    magni.</p>
+                <div class="detail__divider"></div>
+                <div class="flex__align__middle">
+                    <button class="bg-white border"><i class="fa-solid fa-minus"></i></button>
+                    <input type="text" class="mx-2 text-center" id="detailCount">
+                    <button class="bg-white border"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="detail__divider"></div>
+                <div class="row">
+                    <button class="btn rounded-pill text-uppercase p-1 border m-2 p-2 list__btn list__btn__buy">Mua
+                        ngay</button>
+                    <button class="btn rounded-circle border m-2 p-2 list__btn"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="btn rounded-circle border m-2 p-2 list__btn"><i
+                            class="fa-solid fa-heart"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-1 p-1">
+                <div class="square__image">
+                    <img src="../Images/Product/spx2-1.png" alt="">
+                </div>
+            </div>
+            <div class="col-1 p-1">
+                <div class="square__image">
+                    <img src="../Images/Product/spx2-1.png" alt="">
+                </div>
+            </div>
+            <div class="col-1 p-1">
+                <div class="square__image">
+                    <img src="../Images/Product/spx2-1.png" alt="">
+                </div>
+            </div>
+            <div class="col-1 p-1">
+                <div class="square__image">
+                    <img src="../Images/Product/spx2-1.png" alt="">
+                </div>
+            </div>
+            <div class="col-1 p-1">
+                <div class="square__image">
+                    <img src="../Images/Product/spx2-1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row p-0">
+            <div class="col-4 text-uppercase p-2 text-center detail__info__nav detail__info__nav--active">
+                Thông tin sản phẩm
+            </div>
+            <div class="col-4 text-uppercase p-2 text-center detail__info__nav">
+                Khách hàng đánh giá
+            </div>
+            <div class="col-4 text-uppercase p-2 text-center detail__info__nav">
+                Thẻ tag
+            </div>
+        </div>
+        <div class="row p-0">
+            <div class="p-5 detail__info__body">
+                <div>Tên phổ thông</div>
+                <div>Họ thực vật</div>
+                <div>Chiều cao</div>
+                <div>Nguồn gốc</div>
+                <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit atque dignissimos nostrum fugiat
+                    exercitationem assumenda aliquid incidunt illo, aliquam quis! Facere esse sit veniam et
+                    necessitatibus reiciendis numquam sint ea.</div>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg my-3">
+        <div class="home__title">Sản phẩm cùng loại<div class="home__title__underline"></div></div>
+        <div class="home__title__divider"></div>
+        <div class="row">
+            <div class="col-3 p-2">
+                <div class="card text-center p-0 rounded-0">
+                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top rounded-0">
+                    <span class="home__badge--new flex__align__middle flex__justify__center">New</span>
+                    <div class="card-body">
+                        <p>Cây chân chim</p>
+                        <div class="d-flex justify-content-center">
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                        </div>
+                        <div class="d-flex justify-content-center mt-1">
+                            <div class="home__price">200.000đ</div>
+                            <div class="home__price__notsale">300.000đ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-2">
+                <div class="card text-center p-0 rounded-0">
+                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top rounded-0">
+                    <span class="home__badge--new flex__align__middle flex__justify__center">New</span>
+                    <div class="card-body">
+                        <p>Cây chân chim</p>
+                        <div class="d-flex justify-content-center">
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                        </div>
+                        <div class="d-flex justify-content-center mt-1">
+                            <div class="home__price">200.000đ</div>
+                            <div class="home__price__notsale">300.000đ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-2">
+                <div class="card text-center p-0 rounded-0">
+                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top rounded-0">
+                    <span class="home__badge--new flex__align__middle flex__justify__center">New</span>
+                    <div class="card-body">
+                        <p>Cây chân chim</p>
+                        <div class="d-flex justify-content-center">
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                        </div>
+                        <div class="d-flex justify-content-center mt-1">
+                            <div class="home__price">200.000đ</div>
+                            <div class="home__price__notsale">300.000đ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-2">
+                <div class="card text-center p-0 rounded-0">
+                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top rounded-0">
+                    <span class="home__badge--new flex__align__middle flex__justify__center">New</span>
+                    <div class="card-body">
+                        <p>Cây chân chim</p>
+                        <div class="d-flex justify-content-center">
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
+                        </div>
+                        <div class="d-flex justify-content-center mt-1">
+                            <div class="home__price">200.000đ</div>
+                            <div class="home__price__notsale">300.000đ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid bg-dark footer mt-5">
+        <div class="container-lg p-2">
+            <div class="row">
+                <div class="col-12 col-sm-3 text-uppercase footer p-1">
+                    Kênh thông tin từ chúng tôi
+                    <div class="d-flex">
+                        <i class="fa-brands fa-facebook mx-2" style="color: #c7c7c7;"></i>
+                        <i class="fa-brands fa-twitter mx-2" style="color: #c7c7c7;"></i>
+                        <i class="fa-brands fa-youtube mx-2" style="color: #c7c7c7;"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 text-uppercase footer p-1">
+                    Đăng ký nhận Email từ chúng tôi
+                </div>
+                <div class="col-12 col-sm-6 flex__align__middle">
+                    <form action="" class="w-100 text-center">
+                        <input type="text" class="w-75 bg-white footer__email">
+                        <button type="submit" class="footer__email footer__email__btn m-0">
+                            <i class="fa-solid fa-paper-plane" style="color: #ffffff;"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__divider"></div>
+    <div class="container-fluid bg-dark footer">
+        <div class="container-lg p-2">
+            <div class="row">
+                <div class="col-12 col-sm-3" style="font-size: 10px;">
+                    <img src="../Images/green-city.png" alt="Green Shop Logo" class="navbar-brand header__logo">
+                    <p class="pe-1 mt-2">Green Shop được thành lập từ 8/2010 được sự tin tưởng của khách hàng trong
+                        suốt thời gian hoạt
+                        động đến nay cửa hàng ngày một phát triển</p>
+                    <i class="fa-solid fa-square-phone text-start footer__icon"></i>Điện thoại: 0999999999<br />
+                    <i class="fa-solid fa-envelope text-start footer__icon "></i>Email: fake@mail.com
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="footer__icon text-uppercase py-3">Thông tin khách hàng</div>
+                    <ul class="list-unstyled footer__ul">
+                        <li>> Tài khoản của tôi</li>
+                        <li>> Sản phẩm yêu thích</li>
+                        <li>> Lịch sử mua hàng</li>
+                        <li>> Danh sách đổi trả</li>
+                        <li>> Góp ý, khiếu nại</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-2">
+                    <div class="footer__icon text-uppercase py-3">Hỗ trợ dịch vụ</div>
+                    <ul class="list-unstyled footer__ul">
+                        <li>> Hướng dẫn mua hàng</li>
+                        <li>> Hệ thống cửa hàng</li>
+                        <li>> Hướng dẫn thanh toán</li>
+                        <li>> Tích điểm đổi quà</li>
+                        <li>> Câu hỏi thường gặp</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-2">
+                    <div class="footer__icon text-uppercase py-3">Chính sách ưu đãi</div>
+                    <ul class="list-unstyled footer__ul">
+                        <li>> Chính sách giao hàng</li>
+                        <li>> Chính sách trả sản phẩm</li>
+                        <li>> Chính sách bảo hành</li>
+                        <li>> Giới thiệu sản phẩm</li>
+                        <li>> Chính sách trả góp</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-2">
+                    <div class="footer__icon text-uppercase py-3">Tin tức</div>
+                    <ul class="list-unstyled footer__ul">
+                        <li>> Tin mới</li>
+                        <li>> Khuyến mại</li>
+                        <li>> Tuyển dụng</li>
+                        <li>> Download</li>
+                        <li>> Tags</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__divider"></div>
+    <div class="container-fluid bg-dark footer hidden__mobile d-flex justify-between">
+        <div class="container-lg d-flex" style="font-size: 10px;">
+            <div class="p-2">Sitemap</div>
+            <div class="p-2">Danh mục sản phẩm</div>
+            <div class="p-2">Hợp tác</div>
+            <div class="p-2">Thông tin liên hệ</div>
+            <div class="p-2">Câu hỏi thường gặp</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/af92851652.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
