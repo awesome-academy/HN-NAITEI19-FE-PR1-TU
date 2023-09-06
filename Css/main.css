@@ -2,6 +2,7 @@
   --content_green: rgb(3, 190, 3);
   --dark_green: #098600;
   --divider_grey: #d4d4d4;
+  --light_grey: #555555;
 }
 
 
@@ -30,4 +31,17 @@
   .hidden__lg {
     display: none !important;
   }
+}
+
+.breadcrumb__item {
+  font-size: 10px;
+}
+.breadcrumb__item a {
+  text-decoration: none;
+  font-size: 10px;
+  color: var(--light_grey);
+}
+.breadcrumb__item--active {
+  font-size: 10px;
+  color: var(--content_green);
 }

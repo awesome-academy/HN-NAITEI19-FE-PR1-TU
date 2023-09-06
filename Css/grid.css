@@ -1,0 +1,63 @@
+.grid__title__divider {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--divider_grey);
+}
+.grid__sidebar__list li {
+    font-size: 10px;
+    color: var(--light_grey);
+}
+.grid__sidebar__list li::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--divider_grey);
+}
+.grid__sidebar__color {
+    font-size: 10px;
+}
+.grid__sidebar__color div {
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    margin-right: 5px;
+}
+
+.grid__banner {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+.grid__controller {
+    color: var(--light_grey)
+}
+.grid__controller--active {
+    color: var(--content_green);
+}
+
+.list__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.list__btn {
+    width: fit-content;
+}
+.list__btn:hover {
+    background-color: var(--dark_green);
+    color: white;
+}
+.list__btn__buy {
+    background-color: var(--content_green);
+    color: white;
+    padding: 0 10px;
+}
+.list__body h5 {
+    font-size: 20px;
+}
+.list__body p {
+    font-size: 10px;
+    color: var(--light_grey);
+}

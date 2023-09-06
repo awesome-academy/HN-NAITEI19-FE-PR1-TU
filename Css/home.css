@@ -77,9 +77,18 @@
 }
 
 .home__title {
+    width: max-content;
     margin-top: 30px;
     font-weight: bold;
-    color: var(--content_green);    
+    color: var(--content_green);  
+    position: relative;  
+}
+.home__title__underline {
+    width: 100%;
+    height: 2px;
+    background-color: var(--content_green);
+    position: absolute;
+    bottom: -10px;
 }
 .home__title__divider {
     margin-top: 10px;
@@ -173,4 +182,9 @@
     color: var(--content_green);
     font-style: italic;
     font-size: 10px;
+}
+.home__news img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
 }
