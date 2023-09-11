@@ -105,9 +105,36 @@
     border-radius: 0px;
     position: relative;
 }
-.home__card img {
-    position: relative;
+.home__card__buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
 }
+.home__card__buy:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.home__card__buy__btn {
+    visibility: hidden;  
+}
+.home__card__buy:hover .home__card__buy__btn {
+    visibility: visible;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--content_green);
+    border-radius: 999px;
+    border: none;
+}
+.home__card__buy:hover .home__card__buy__btn:hover {
+    color: white;
+    background-color: var(--dark_green);
+}
+
+
 .home__badge--sale {
     width: 50px;
     height: 50px;
@@ -188,3 +215,13 @@
     height: 240px;
     object-fit: cover;
 }
+.header__auth__btn a {
+    color: #c7c7c7;
+    text-decoration: none;
+    font-size: 10px;
+}
+.header__auth__btn i {
+    margin-right: 5px;
+}
+
+
