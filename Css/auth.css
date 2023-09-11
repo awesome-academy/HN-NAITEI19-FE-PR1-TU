@@ -1,0 +1,52 @@
+.auth__required__mark {
+    color: red;
+}
+.auth__btn {
+    min-width: 100px;
+    width: fit-content;
+    margin-right: 20px;
+}
+.auth__btn:hover {
+    background-color: var(--dark_green);
+    color: white;
+}
+.auth__btn__back {
+    border: 1px solid var(--content_green);
+    color: var(--content_green);
+}
+.auth__btn__submit {
+    background-color: var(--content_green);
+    color: white;
+    border: 1px solid var(--content_green);
+}
+
+.auth__title {
+    font-weight: bold;
+    color: var(--content_green);
+    margin: 30px 0px;
+}
+
+#signUpForm label {
+    font-size: 12px;
+}
+
+#signUpForm input {
+    border-radius: 0px;
+}
+
+#signInForm label {
+    font-size: 12px;
+}
+
+#signInForm input {
+    border-radius: 0px;
+}
+.auth__forgot__pass a {
+    margin-left: 5px;
+    color: var(--light_grey);
+    font-style: italic;
+    font-size: 12px;
+}
+.auth__forgot__pass a:hover {
+    font-weight: bold;
+}
