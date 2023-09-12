@@ -13,6 +13,29 @@
 
 <body>
     <!-- header -->
+    <div class="header__auth bg-dark">
+        <div class="container-lg p-2">
+            <div class="row flex__align__middle">
+                <div class="col-12 col-sm-4 flex__align__middle">
+                    <i class="fa-solid fa-clock mx-2" style="color: #c7c7c7;"></i>
+                   <div style="color: #c7c7c7; font-size: 10px;">Open time 8:00 - 18:00 Monday - Sunday</div>
+                </div>
+                <div class="col-sm-2 hidden__mobile">
+                    <div class="d-flex">
+                        <i class="fa-brands fa-facebook mx-2" style="color: #c7c7c7;"></i>
+                        <i class="fa-brands fa-twitter mx-2" style="color: #c7c7c7;"></i>
+                        <i class="fa-brands fa-youtube mx-2" style="color: #c7c7c7;"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 flex__justify__end">
+                   <div class="header__auth__btn">
+                    <a href="./signin.html"><i class="fa-solid fa-person"></i>Đăng nhập</a>
+                    <a href="./signup.html"><i class="fa-solid fa-plus"></i>Đăng ký</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="header__container__upper">
         <div class="container-lg p-2">
             <div class="row">
@@ -40,10 +63,10 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-2 hidden__mobile flex__align__middle">
+                <a class="col-2 hidden__mobile flex__align__middle" href="./cart.html" style="text-decoration: none; color: black;">
                     <img src="../Images/shopping-cart.png" class="mx-2 header__cart__logo">
-                    <div><span>0</span> Sản phẩm</div>
-                </div>
+                    <div><span id="cartCount">0</span> Sản phẩm</div>
+                </a>
 
             </div>
         </div>
@@ -60,7 +83,7 @@
                             <a class="nav-link text-uppercase mx-2 header__link--active" aria-current="page"
                                 href="#">Trang chủ</a>
                             <a class="nav-link text-uppercase mx-2" href="#">Giới thiệu</a>
-                            <a class="nav-link text-uppercase mx-2" href="#">Sản phẩm</a>
+                            <a class="nav-link text-uppercase mx-2" href="./products.html">Sản phẩm</a>
                             <a class="nav-link text-uppercase mx-2" href="#">Sản phẩm mới</a>
                             <a class="nav-link text-uppercase mx-2" href="#">Tin tức</a>
                             <a class="nav-link text-uppercase mx-2" href="#">Liên hệ</a>
@@ -87,34 +110,19 @@
         <img src="../Images/Banner/HomeBanner.png" alt="Green Shop Banner" class="home__banner">
     </div>
 
+    <!-- featuring -->
     <div class="container-lg">
         <div class="home__title">Sản phẩ<div class="home__title__underline"></div>m nổi bật</div>
         <div class="home__title__divider"></div>
         <div class="row">
-            <div class="col-12 col-sm-6 p-0 d-flex flex-wrap">
-                <div class="card text-center p-0 home__card">
-                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                    <span class="home__badge--sale flex__align__middle flex__justify__center">-50%</span>
-                    <div class="card-body">
-                        <p>Cây chân chim</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                        </div>
-                        <div class="d-flex justify-content-center mt-1">
-                            <div class="home__price">200.000đ</div>
-                            <div class="home__price__notsale">300.000đ</div>
-                        </div>
+            <div id="featureCol1" class="col-12 col-sm-6 p-0 d-flex flex-wrap" >
+                <div class="card text-center p-0 home__card"  data='{"id":1, "title": "fake tree"}'>
+                    <div class="home__card__buy">
+                        <button class="home__card__buy__btn">Mua</button>
                     </div>
-                </div>
-                <div class="card text-center p-0 home__card home__card__small">
-                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                    <span class="home__badge--new flex__align__middle flex__justify__center">New</span>
+                    <img src="../Images/Product/spx2-2.png" alt="" class="card-img-top">
                     <div class="card-body">
-                        <p>Cây chân chim</p>
+                        <p>${prod.title}</p>
                         <div class="d-flex justify-content-center">
                             <i class="fa-solid fa-star" style="color: #fbff14;"></i>
                             <i class="fa-solid fa-star" style="color: #fbff14;"></i>
@@ -123,302 +131,35 @@
                             <i class="fa-solid fa-star" style="color: #fbff14;"></i>
                         </div>
                         <div class="d-flex justify-content-center mt-1">
-                            <div class="home__price">200.000đ</div>
-                            <div class="home__price__notsale">300.000đ</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card text-center p-0 home__card home__card__small">
-                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <p>Cây chân chim</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                        </div>
-                        <div class="d-flex justify-content-center mt-1">
-                            <div class="home__price">200.000đ</div>
-                            <div class="home__price__notsale">300.000đ</div>
+                            <div class="home__price">${prod.price}</div>
+                            <div class="home__price__notsale">${prod.NotSaledprice}</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 p-0 d-flex flex-wrap">
-                <div class="card text-center p-0 home__card home__card__small">
-                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <p>Cây chân chim</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                        </div>
-                        <div class="d-flex justify-content-center mt-1">
-                            <div class="home__price">200.000đ</div>
-                            <div class="home__price__notsale">300.000đ</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card text-center p-0 home__card home__card__small">
-                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <p>Cây chân chim</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                        </div>
-                        <div class="d-flex justify-content-center mt-1">
-                            <div class="home__price">200.000đ</div>
-                            <div class="home__price__notsale">300.000đ</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card text-center p-0 home__card">
-                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <p>Cây chân chim</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                        </div>
-                        <div class="d-flex justify-content-center mt-1">
-                            <div class="home__price">200.000đ</div>
-                            <div class="home__price__notsale">300.000đ</div>
-                        </div>
-                    </div>
-                </div>
+            <div id="featureCol2" class="col-12 col-sm-6 p-0 d-flex flex-wrap">           
             </div>
         </div>
     </div>
 
+
     <div class="container-lg">
         <div class="row">
+            <!-- mostbuy -->
             <div class="col-12 col-sm-3">
                 <div class="home__title">Sản phẩ<div class="home__title__underline"></div>m mua nhiều</div>
                 <div class="home__title__divider"></div>
-                <div class="d-flex flex-column h-100">
-                    <div class="home__manybuy__card border flex__align__middle">
-                        <img src="../Images/Product/spx2-1.png" alt="">
-                        <div class="px-1">
-                            <div>Cây chân chim</div>
-                            <div class="d-flex">
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            </div>
-                            <div class="home__price">200.000đ</div>
-                        </div>
-                    </div>
-                    <div class="home__manybuy__card border flex__align__middle hidden__mobile">
-                        <img src="../Images/Product/spx2-1.png" alt="">
-                        <div class="px-1">
-                            <div>Cây chân chim</div>
-                            <div class="d-flex">
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            </div>
-                            <div class="home__price">200.000đ</div>
-                        </div>
-                    </div>
-                    <div class="home__manybuy__card border flex__align__middle hidden__mobile">
-                        <img src="../Images/Product/spx2-1.png" alt="">
-                        <div class="px-1">
-                            <div>Cây chân chim</div>
-                            <div class="d-flex">
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            </div>
-                            <div class="home__price">200.000đ</div>
-                        </div>
-                    </div>
-                    <div class="home__manybuy__card border flex__align__middle hidden__mobile">
-                        <img src="../Images/Product/spx2-1.png" alt="">
-                        <div class="px-1">
-                            <div>Cây chân chim</div>
-                            <div class="d-flex">
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            </div>
-                            <div class="home__price">200.000đ</div>
-                        </div>
-                    </div>
-                    <div class="home__manybuy__card border flex__align__middle hidden__mobile">
-                        <img src="../Images/Product/spx2-1.png" alt="">
-                        <div class="px-1">
-                            <div>Cây chân chim</div>
-                            <div class="d-flex">
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            </div>
-                            <div class="home__price">200.000đ</div>
-                        </div>
-                    </div>
-                    <div class="home__manybuy__card border flex__align__middle hidden__mobile">
-                        <img src="../Images/Product/spx2-1.png" alt="">
-                        <div class="px-1">
-                            <div>Cây chân chim</div>
-                            <div class="d-flex">
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            </div>
-                            <div class="home__price">200.000đ</div>
-                        </div>
-                    </div>
+                <div id="mostBuyCol" class="d-flex flex-column h-100">
+                    
                 </div>
 
             </div>
+            <!-- saling -->
             <div class="col-12 col-sm-9">
                 <div class="home__title">Sản phẩ<div class="home__title__underline"></div>m khuyến mại</div>
                 <div class="home__title__divider"></div>
-                <div class="row">
-                    <div class="col-12 col-sm-4">
-                        <div class="card text-center p-0 home__card">
-                            <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                            <span class="home__badge--sale flex__align__middle flex__justify__center">-50%</span>
-                            <div class="card-body">
-                                <p>Cây chân chim</p>
-                                <div class="d-flex justify-content-center">
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                </div>
-                                <div class="d-flex justify-content-center mt-1">
-                                    <div class="home__price">200.000đ</div>
-                                    <div class="home__price__notsale">300.000đ</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-4 hidden__mobile">
-                        <div class="card text-center p-0 home__card">
-                            <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                            <span class="home__badge--sale flex__align__middle flex__justify__center">-50%</span>
-                            <div class="card-body">
-                                <p>Cây chân chim</p>
-                                <div class="d-flex justify-content-center">
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                </div>
-                                <div class="d-flex justify-content-center mt-1">
-                                    <div class="home__price">200.000đ</div>
-                                    <div class="home__price__notsale">300.000đ</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-4 hidden__mobile">
-                        <div class="card text-center p-0 home__card">
-                            <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                            <span class="home__badge--sale flex__align__middle flex__justify__center">-50%</span>
-                            <div class="card-body">
-                                <p>Cây chân chim</p>
-                                <div class="d-flex justify-content-center">
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                </div>
-                                <div class="d-flex justify-content-center mt-1">
-                                    <div class="home__price">200.000đ</div>
-                                    <div class="home__price__notsale">300.000đ</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-4 hidden__mobile">
-                        <div class="card text-center p-0 home__card">
-                            <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                            <span class="home__badge--sale flex__align__middle flex__justify__center">-50%</span>
-                            <div class="card-body">
-                                <p>Cây chân chim</p>
-                                <div class="d-flex justify-content-center">
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                </div>
-                                <div class="d-flex justify-content-center mt-1">
-                                    <div class="home__price">200.000đ</div>
-                                    <div class="home__price__notsale">300.000đ</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-4 hidden__mobile">
-                        <div class="card text-center p-0 home__card">
-                            <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                            <span class="home__badge--sale flex__align__middle flex__justify__center">-50%</span>
-                            <div class="card-body">
-                                <p>Cây chân chim</p>
-                                <div class="d-flex justify-content-center">
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                </div>
-                                <div class="d-flex justify-content-center mt-1">
-                                    <div class="home__price">200.000đ</div>
-                                    <div class="home__price__notsale">300.000đ</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-4 hidden__mobile">
-                        <div class="card text-center p-0 home__card">
-                            <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                            <span class="home__badge--sale flex__align__middle flex__justify__center">-50%</span>
-                            <div class="card-body">
-                                <p>Cây chân chim</p>
-                                <div class="d-flex justify-content-center">
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                    <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                                </div>
-                                <div class="d-flex justify-content-center mt-1">
-                                    <div class="home__price">200.000đ</div>
-                                    <div class="home__price__notsale">300.000đ</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row" id="saleCol">
+
                 </div>
             </div>
         </div>
@@ -428,210 +169,23 @@
         <img src="../Images/Banner/SmallBanner.png" alt="small banner" class="home__banner__small">
     </div>
 
+    <!-- new product -->
     <div class="container-lg">
         <div class="home__title">Sản phẩ<div class="home__title__underline"></div>m mới </div>
         <div class="home__title__divider"></div>
-        <div class="row row-cols-1 row-cols-sm-4">
-            <div class="p-2">
-                <div class="card text-center p-0">
-                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                    <span class="home__badge--new flex__align__middle flex__justify__center">New</span>
-                    <div class="card-body">
-                        <p>Cây chân chim</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                        </div>
-                        <div class="d-flex justify-content-center mt-1">
-                            <div class="home__price">200.000đ</div>
-                            <div class="home__price__notsale">300.000đ</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="p-2 hidden__mobile">
-                <div class="card text-center p-0">
-                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                    <span class="home__badge--new flex__align__middle flex__justify__center">New</span>
-                    <div class="card-body">
-                        <p>Cây chân chim</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                        </div>
-                        <div class="d-flex justify-content-center mt-1">
-                            <div class="home__price">200.000đ</div>
-                            <div class="home__price__notsale">300.000đ</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="p-2 hidden__mobile">
-                <div class="card text-center p-0">
-                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                    <span class="home__badge--new flex__align__middle flex__justify__center">New</span>
-                    <div class="card-body">
-                        <p>Cây chân chim</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                        </div>
-                        <div class="d-flex justify-content-center mt-1">
-                            <div class="home__price">200.000đ</div>
-                            <div class="home__price__notsale">300.000đ</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="p-2 hidden__mobile">
-                <div class="card text-center p-0">
-                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                    <span class="home__badge--new flex__align__middle flex__justify__center">New</span>
-                    <div class="card-body">
-                        <p>Cây chân chim</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                        </div>
-                        <div class="d-flex justify-content-center mt-1">
-                            <div class="home__price">200.000đ</div>
-                            <div class="home__price__notsale">300.000đ</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="p-2 hidden__mobile">
-                <div class="card text-center p-0">
-                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                    <span class="home__badge--new flex__align__middle flex__justify__center">New</span>
-                    <div class="card-body">
-                        <p>Cây chân chim</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                        </div>
-                        <div class="d-flex justify-content-center mt-1">
-                            <div class="home__price">200.000đ</div>
-                            <div class="home__price__notsale">300.000đ</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="p-2 hidden__mobile">
-                <div class="card text-center p-0">
-                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                    <span class="home__badge--new flex__align__middle flex__justify__center">New</span>
-                    <div class="card-body">
-                        <p>Cây chân chim</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                        </div>
-                        <div class="d-flex justify-content-center mt-1">
-                            <div class="home__price">200.000đ</div>
-                            <div class="home__price__notsale">300.000đ</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="p-2 hidden__mobile">
-                <div class="card text-center p-0">
-                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                    <span class="home__badge--new flex__align__middle flex__justify__center">New</span>
-                    <div class="card-body">
-                        <p>Cây chân chim</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                        </div>
-                        <div class="d-flex justify-content-center mt-1">
-                            <div class="home__price">200.000đ</div>
-                            <div class="home__price__notsale">300.000đ</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="p-2 hidden__mobile">
-                <div class="card text-center p-0">
-                    <img src="../Images/Product/spx2-1.png" alt="" class="card-img-top">
-                    <span class="home__badge--new flex__align__middle flex__justify__center">New</span>
-                    <div class="card-body">
-                        <p>Cây chân chim</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                            <i class="fa-solid fa-star" style="color: #fbff14;"></i>
-                        </div>
-                        <div class="d-flex justify-content-center mt-1">
-                            <div class="home__price">200.000đ</div>
-                            <div class="home__price__notsale">300.000đ</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="row row-cols-1 row-cols-sm-4" id="newCol">
+
         </div>
     </div>
 
     <div class="container-lg">
-        <div class="home__title">Tin tức<div class="home__title__underline"></div></div>
+        <div class="home__title">Tin tức<div class="home__title__underline"></div>
+        </div>
         <div class="home__title__divider"></div>
-        <div class="row">
-            <div class="col-12 col-sm-4 p-2">
-                <div class="card border-0 home__news">
-                    <img src="../Images/News/News1.jpg" alt="" class="card-img-top rounded-0">
-                    <div>Thú 3, ngày 5, tháng 9, năm 2023 </div>
-                    <h4>15 Thiết kế phòng ngủ tuyệt đẹp làm vạn người mê</h4>
-                    <p>Cùng Sài Gòn Hoa tìm Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ad quasi ea
-                        qui aperiam fugiat!</p>
-                    <a href="">Đọc tiếp</a>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 p-2 hidden__mobile">
-                <div class="card border-0 home__news">
-                    <img src="../Images/News/News1.jpg" alt="" class="card-img-top rounded-0">
-                    <div>Thú 3, ngày 5, tháng 9, năm 2023 </div>
-                    <h4>15 Thiết kế phòng ngủ tuyệt đẹp làm vạn người mê</h4>
-                    <p>Cùng Sài Gòn Hoa tìm Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ad quasi ea
-                        qui aperiam fugiat!</p>
-                    <a href="">Đọc tiếp</a>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 p-2 hidden__mobile">
-                <div class="card border-0 home__news">
-                    <img src="../Images/News/News2.jpg" alt="" class="card-img-top rounded-0">
-                    <div>Thú 3, ngày 5, tháng 9, năm 2023 </div>
-                    <h4>15 Thiết kế phòng ngủ tuyệt đẹp làm vạn người mê</h4>
-                    <p>Cùng Sài Gòn Hoa tìm Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ad quasi ea
-                        qui aperiam fugiat!</p>
-                    <a href="">Đọc tiếp</a>
-                </div>
-            </div>
+        <div class="row" id="newsCol">
+            
         </div>
     </div>
-
 
     <!-- footer -->
     <div class="container-fluid bg-dark footer mt-5">
@@ -729,6 +283,7 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/af92851652.js" crossorigin="anonymous"></script>
+    <script src="../Js/home.js"></script>
 </body>
 
 </html>
